@@ -9,7 +9,7 @@
 #import "CCTableViewController.h"
 
 @interface CCTableViewController ()
-
+@property (strong,nonatomic) NSMutableArray *credentials;
 @end
 
 @implementation CCTableViewController
@@ -26,6 +26,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    PFQuery *query =[PFQuery queryWithClassName:@"TextBookApp"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+    if(!error)
+    
+    {
+        self.credentials= [objects mutableCopy ];
+        [self.tableView reloadData ];
+    
+    }
+     else if(error)
+     {
+        // NSlog("Login  Failed");
+         
+     }
+        
+        
+    }];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -46,37 +64,49 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.credentials count];;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+
+
+
+static NSString *CellIdentifier = @"cell";
+//
     
+UITableViewCell *cell = [ tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath:indexPath];
+//UITableView *cell=[UITableView de]
+//
+PFObject *credential = self.credentials[ indexPath.row];
+
+cell.textLabel.text= credential[@"name"];
+cell.detailTextLabel.text=credential[@"password"];
+
+
     // Configure the cell...
     
-    return cell;
+return cell;
 }
-*/
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
+
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -87,25 +117,23 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
 
-/*
+
+
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
 }
-*/
 
-/*
+
+
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
-*/
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -114,6 +142,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end

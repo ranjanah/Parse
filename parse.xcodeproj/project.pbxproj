@@ -22,6 +22,17 @@
 		BB0C554119270EAB0009E7C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0C552019270EAB0009E7C3 /* UIKit.framework */; };
 		BB0C554919270EAB0009E7C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0C554719270EAB0009E7C3 /* InfoPlist.strings */; };
 		BB0C554B19270EAB0009E7C3 /* parseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0C554A19270EAB0009E7C3 /* parseTests.m */; };
+		BB0C5555192710BD0009E7C3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0C5554192710BD0009E7C3 /* Parse.framework */; };
+		BB0C5557192710F80009E7C3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0C5556192710F80009E7C3 /* AudioToolbox.framework */; };
+		BB0C5559192711070009E7C3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0C5558192711070009E7C3 /* CFNetwork.framework */; };
+		BB0C555B192711200009E7C3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0C555A192711200009E7C3 /* CoreLocation.framework */; };
+		BB0C555D192711380009E7C3 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0C555C192711380009E7C3 /* libz.1.1.3.dylib */; };
+		BB0C555F1927114D0009E7C3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0C555E1927114D0009E7C3 /* MobileCoreServices.framework */; };
+		BB0C5561192711610009E7C3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0C5560192711610009E7C3 /* QuartzCore.framework */; };
+		BB0C5563192711720009E7C3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0C5562192711720009E7C3 /* Security.framework */; };
+		BB0C5565192711810009E7C3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0C5564192711810009E7C3 /* StoreKit.framework */; };
+		BB0C55671927119B0009E7C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0C55661927119B0009E7C3 /* SystemConfiguration.framework */; };
+		BB0C556A19271A2A0009E7C3 /* CCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0C556919271A2A0009E7C3 /* CCTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +66,18 @@
 		BB0C554619270EAB0009E7C3 /* parseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "parseTests-Info.plist"; sourceTree = "<group>"; };
 		BB0C554819270EAB0009E7C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB0C554A19270EAB0009E7C3 /* parseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = parseTests.m; sourceTree = "<group>"; };
+		BB0C5554192710BD0009E7C3 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		BB0C5556192710F80009E7C3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BB0C5558192711070009E7C3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BB0C555A192711200009E7C3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BB0C555C192711380009E7C3 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		BB0C555E1927114D0009E7C3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BB0C5560192711610009E7C3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BB0C5562192711720009E7C3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BB0C5564192711810009E7C3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BB0C55661927119B0009E7C3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BB0C556819271A2A0009E7C3 /* CCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTableViewController.h; sourceTree = "<group>"; };
+		BB0C556919271A2A0009E7C3 /* CCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +85,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0C55671927119B0009E7C3 /* SystemConfiguration.framework in Frameworks */,
+				BB0C5565192711810009E7C3 /* StoreKit.framework in Frameworks */,
+				BB0C5563192711720009E7C3 /* Security.framework in Frameworks */,
+				BB0C5561192711610009E7C3 /* QuartzCore.framework in Frameworks */,
+				BB0C555F1927114D0009E7C3 /* MobileCoreServices.framework in Frameworks */,
+				BB0C555D192711380009E7C3 /* libz.1.1.3.dylib in Frameworks */,
+				BB0C555B192711200009E7C3 /* CoreLocation.framework in Frameworks */,
+				BB0C5559192711070009E7C3 /* CFNetwork.framework in Frameworks */,
+				BB0C5557192710F80009E7C3 /* AudioToolbox.framework in Frameworks */,
 				BB0C551F19270EAB0009E7C3 /* CoreGraphics.framework in Frameworks */,
 				BB0C552119270EAB0009E7C3 /* UIKit.framework in Frameworks */,
+				BB0C5555192710BD0009E7C3 /* Parse.framework in Frameworks */,
 				BB0C551D19270EAB0009E7C3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +136,16 @@
 		BB0C551B19270EAB0009E7C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB0C55661927119B0009E7C3 /* SystemConfiguration.framework */,
+				BB0C5564192711810009E7C3 /* StoreKit.framework */,
+				BB0C5562192711720009E7C3 /* Security.framework */,
+				BB0C5560192711610009E7C3 /* QuartzCore.framework */,
+				BB0C555E1927114D0009E7C3 /* MobileCoreServices.framework */,
+				BB0C555C192711380009E7C3 /* libz.1.1.3.dylib */,
+				BB0C555A192711200009E7C3 /* CoreLocation.framework */,
+				BB0C5558192711070009E7C3 /* CFNetwork.framework */,
+				BB0C5556192710F80009E7C3 /* AudioToolbox.framework */,
+				BB0C5554192710BD0009E7C3 /* Parse.framework */,
 				BB0C551C19270EAB0009E7C3 /* Foundation.framework */,
 				BB0C551E19270EAB0009E7C3 /* CoreGraphics.framework */,
 				BB0C552019270EAB0009E7C3 /* UIKit.framework */,
@@ -117,6 +160,8 @@
 				BB0C552B19270EAB0009E7C3 /* AppDelegate.h */,
 				BB0C552C19270EAB0009E7C3 /* AppDelegate.m */,
 				BB0C552E19270EAB0009E7C3 /* Main_iPhone.storyboard */,
+				BB0C556819271A2A0009E7C3 /* CCTableViewController.h */,
+				BB0C556919271A2A0009E7C3 /* CCTableViewController.m */,
 				BB0C553119270EAB0009E7C3 /* Main_iPad.storyboard */,
 				BB0C553419270EAB0009E7C3 /* ViewController.h */,
 				BB0C553519270EAB0009E7C3 /* ViewController.m */,
@@ -256,6 +301,7 @@
 				BB0C553619270EAB0009E7C3 /* ViewController.m in Sources */,
 				BB0C552D19270EAB0009E7C3 /* AppDelegate.m in Sources */,
 				BB0C552919270EAB0009E7C3 /* main.m in Sources */,
+				BB0C556A19271A2A0009E7C3 /* CCTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +436,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "parse/parse-Prefix.pch";
 				INFOPLIST_FILE = "parse/parse-Info.plist";
@@ -403,6 +453,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "parse/parse-Prefix.pch";
 				INFOPLIST_FILE = "parse/parse-Info.plist";
